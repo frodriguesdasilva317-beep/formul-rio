@@ -1,0 +1,121 @@
+<
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal de Empregos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="topo">
+    <div class="container navegacao">
+      <a href="#" class="logo">Emprega<span>+</span></a>
+      <nav>
+        <a href="#vagas">Vagas</a>
+        <a href="#formulario">Candidatar-se</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="banner">
+    <div class="container">
+      <p class="destaque">SEU FUTURO COMEÇA AQUI</p>
+      <h1>Encontre a vaga ideal<br>para sua carreira.</h1>
+      <p>Descubra oportunidades e dê o próximo passo profissional.</p>
+      <a href="#vagas" class="botao">Ver vagas disponíveis</a>
+    </div>
+  </section>
+
+  <main class="container">
+    <section id="vagas" class="secao-vagas">
+      <div class="titulo-secao">
+        <p class="destaque">OPORTUNIDADES</p>
+        <h2>Vagas disponíveis</h2>
+        <p>Confira algumas das nossas oportunidades de emprego.</p>
+      </div>
+
+      <div class="lista-vagas">
+        <article class="vaga">
+          <span class="etiqueta">Tempo integral</span>
+          <h3>Assistente Administrativo</h3>
+          <p class="empresa">Emprega+ Tecnologia</p>
+          <p>Organização de documentos, atendimento e apoio às atividades administrativas.</p>
+          <p class="detalhe">📍 Presencial · 💼 CLT</p>
+          <button type="button" class="botao-vaga"
+            data-vaga="Assistente Administrativo">Quero me candidatar</button>
+        </article>
+
+        <article class="vaga">
+          <span class="etiqueta">Tempo integral</span>
+          <h3>Atendente Comercial</h3>
+          <p class="empresa">Emprega+ Serviços</p>
+          <p>Atendimento aos clientes, esclarecimento de dúvidas e suporte às vendas.</p>
+          <p class="detalhe">📍 Presencial · 💼 CLT</p>
+          <button type="button" class="botao-vaga"
+            data-vaga="Atendente Comercial">Quero me candidatar</button>
+        </article>
+
+        <article class="vaga">
+          <span class="etiqueta">Júnior</span>
+          <h3>Auxiliar de Informática</h3>
+          <p class="empresa">Emprega+ Tecnologia</p>
+          <p>Suporte técnico básico, instalação de programas e auxílio aos usuários.</p>
+          <p class="detalhe">📍 Híbrido · 💼 CLT</p>
+          <button type="button" class="botao-vaga"
+            data-vaga="Auxiliar de Informática">Quero me candidatar</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="secao-formulario">
+      <div class="texto-formulario">
+        <p class="destaque">FAÇA PARTE DA EQUIPE</p>
+        <h2>Candidate-se a uma vaga</h2>
+        <p>Preencha seus dados e informe a oportunidade desejada. Nossa equipe poderá entrar em contato com você.</p>
+      </div>
+
+      <form id="formulario">
+        <label for="nome">Nome completo</label>
+        <input type="text" id="nome" name="nome"
+          placeholder="Digite seu nome completo" required>
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email"
+          placeholder="seuemail@exemplo.com" required>
+
+        <label for="telefone">Telefone</label>
+        <input type="tel" id="telefone" name="telefone"
+          placeholder="(00) 00000-0000" required>
+
+        <label for="vaga">Vaga desejada</label>
+        <select id="vaga" name="vaga" required>
+          <option value="">Selecione uma vaga</option>
+          <option value="Assistente Administrativo">Assistente Administrativo</option>
+          <option value="Atendente Comercial">Atendente Comercial</option>
+          <option value="Auxiliar de Informática">Auxiliar de Informática</option>
+          <option value="Banco de Talentos">Banco de Talentos</option>
+        </select>
+
+        <label for="mensagem">Apresente-se</label>
+        <textarea id="mensagem" name="mensagem"
+          placeholder="Conte um pouco sobre suas experiências e habilidades..."
+          rows="5"></textarea>
+
+        <button type="submit" id="botaoEnviar">Enviar candidatura</button>
+
+        <p id="aviso" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 Emprega+ | Portal de oportunidades profissionais</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
